@@ -45,3 +45,16 @@ git commit -m "Adding dependencies"
 ```
 npm install --save-dev ts-jest jest @types/jest
 ```
+
+```
+# add the following scripts to the package.json
+
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+```
+
+```
+# and copy the files src/index.test.js and jest.config.js from this repo
+```
