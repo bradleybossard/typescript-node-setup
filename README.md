@@ -7,7 +7,7 @@
 
 ### Setup steps for new repo
 
-#### npm
+#### git and npm setup
 ```
 mkdir typescript-node-setup
 cd typescript-node-setup/
@@ -28,6 +28,7 @@ git add -A
 git commit -m "Adding dependencies"
 ```
 
+#### npm scripts and code template
 ```
 # At this point, we need to update src/index.ts and tsconfig.json to match those in this repo.
 # Secondly, update package.json and add the following script
@@ -38,4 +39,9 @@ git commit -m "Adding dependencies"
 
 # Add we can run our Typescript server with
   npm start
+```
+
+#### testing setup
+```
+npm install --save-dev ts-jest jest @types/jest
 ```
