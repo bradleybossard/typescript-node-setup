@@ -4,6 +4,14 @@
 
 [How to get auto restart and breakpoint support with Typescript and Node](https://medium.com/aherforth/how-to-get-auto-restart-and-breakpoint-support-with-typescript-and-node-5af589dd8687)
 
+[ts-node-dev - npm](https://www.npmjs.com/package/ts-node-dev)
+
+`ts-node-dev` uses the runtime flags from these tools
+
+[node-dev - npm](https://www.npmjs.com/package/node-dev)
+
+[ts-node - npm](https://www.npmjs.com/package/ts-node)
+
 
 ### Setup steps for new repo
 
