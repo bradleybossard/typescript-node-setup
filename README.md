@@ -29,23 +29,25 @@ npm init --yes
 mkdir src && touch src/index.ts
 tsc --init
 npm install --save express
-npm install --save-dev typescript @types/express
 echo node_modules > .gitignore
-npm install --save-dev typescript @types/express
+npm install --save-dev typescript @types/express ts-node-dev
 git add -A
 git commit -m "Adding dependencies"
 ```
 
 #### npm scripts and code template
+
+At this point, we need to update src/index.ts and tsconfig.json to match
+those in this repo. Secondly, update package.json and add the following script
 ```
-# At this point, we need to update src/index.ts and tsconfig.json to match those in this repo.
-# Secondly, update package.json and add the following script
-
   "scripts": {
-    "start": "tsc && node build/index.js"
+    "start": "tsc && node build/index.js",
+    "start:dev": "ts-node-dev --respawn --transpileOnly src/index.ts"
   }
+```
 
-# Add we can run our Typescript server with
+Add we can run our Typescript server with
+```
   npm start
 ```
 
@@ -54,15 +56,13 @@ git commit -m "Adding dependencies"
 npm install --save-dev ts-jest jest @types/jest
 ```
 
-```
-# add the following scripts to the package.json
 
+Add the following scripts to the package.json
+```
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
 ```
 
-```
-# and copy the files src/index.test.js and jest.config.js from this repo
-```
+and copy the files src/index.test.js and jest.config.js from this repo
